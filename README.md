@@ -145,7 +145,7 @@ Ao comparar a execução de ponta a ponta de um fluxo tradicional (manual) com o
 | **Cálculo e Regras de Negócio** | ~5 min (Consultar tabela de km, somar taxas) | Instantâneo (Processado pela LLM) | **Eliminação de erros de cálculo** |
 | **Registro em Planilha** | ~3 min (Digitar cliente, CNPJ, valores) | Instantâneo (Append via API) | **Zero redutível a erro humano** |
 | **Redação da Proposta** | ~7 min (Escrever e-mail formal / cobrar dados) | Instantâneo (Geração do rascunho) | **Padronização total** |
-| **Tempo Total por Solicitação** | **Aprox. 15 a 20 minutos** por e-mail | **Menos de 10 segundos** de processamento | ⚡ **Redução de ~95% no tempo operacional** |
+| **Tempo Total por Solicitação** | **Aprox. 15 a 20 minutos** por e-mail | **Menos de 10 segundos** de processamento | **Redução de ~95% no tempo operacional** |
 
 Considerando um cenário conservador onde o setor comercial processe 20 solicitações de orçamento diárias, a solução economiza **cerca de 5 a 6 horas de trabalho manual por dia**, permitindo que a equipe foque em negociações estratégicas, fechamento de contratos e atendimento de campo.
 
