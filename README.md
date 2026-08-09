@@ -96,7 +96,7 @@ Se você deseja replicar este assistente no seu próprio ambiente n8n, siga os p
 * Uma chave de API (API Key) do **Google Gemini**.
 
 ### 2. Configuração do Banco de Dados
-Na pasta `/database` deste repositório, você encontrará o arquivo `.csv` de template. Importe este arquivo no seu Google Drive para criar a planilha exata com os cabeçalhos esperados pelo fluxo.
+Na pasta `/database` deste repositório, você encontrará o arquivo `.xlsx` de template. Importe este arquivo no seu Google Drive para criar a planilha exata com os cabeçalhos esperados pelo fluxo.
 
 ### 3. Regras de Negócio (Prompt)
 Para entender a lógica de cálculo e adaptar os preços e localizações para a sua realidade de negócios, consulte o arquivo `system_prompt.md` localizado na pasta `/prompts`.
