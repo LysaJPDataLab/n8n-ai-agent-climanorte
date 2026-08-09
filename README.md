@@ -1,6 +1,6 @@
 # Agente de Suporte a Orçamentos com IA (n8n)
 
-Este repositório contém o fluxo de automação desenvolvido no n8n para a **ClimaNorte Refrigeração**. O objetivo do projeto é utilizar Inteligência Artificial para ler e-mails de solicitação de orçamento, extrair informações obrigatórias, calcular propostas comerciais e estruturar os dados em uma planilha de controle.
+Este repositório contém o fluxo de automação desenvolvido no n8n para a empresa fictícia **ClimaNorte Refrigeração**, especializada em manutenção de ar-condicionado. O objetivo do projeto é utilizar Inteligência Artificial para ler e-mails de solicitação de orçamento, extrair informações obrigatórias, calcular propostas comerciais e estruturar os dados em uma planilha de controle.
 
 ## 🚀 Como o Fluxo Funciona
 
