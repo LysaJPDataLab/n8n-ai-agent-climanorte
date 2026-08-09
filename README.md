@@ -32,6 +32,8 @@ O sistema utiliza uma arquitetura linear que combina:
 * 🗄️ **Banco de dados em Nuvem (Google Sheets):** Alimentação de um pipeline de vendas e histórico de solicitações em tempo real.
 * 📧 **Orquestração de E-mail (Gmail):** Geração dinâmica de rascunhos anexados à "thread" (conversa) original do cliente.
 
+Foi mantida a premissa de que a resposta final para o cliente ainda passa pela equipe comercial, decidindo se o rascunho criado pela IA deve ser enviado ou não, sendo este um requisito de projeto do cliente, que é um pouco mais conservador.
+
 ---
 
 # 🚀 Funcionalidades
