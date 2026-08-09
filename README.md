@@ -133,3 +133,16 @@ Para entender a lógica de cálculo e adaptar os preços e localizações para a
 Este projeto demonstra, na prática, como ferramentas de automação *Low-Code* integradas a LLMs modernos podem resolver dores reais de gestão de facilities, operações e manutenção.
 
 A padronização das respostas, a eliminação do trabalho braçal de "copiar e colar" dados e a garantia de que as regras comerciais sejam seguidas com 100% de precisão geram valor imediato para qualquer setor de orçamentação e planejamento.
+
+---
+
+# 🚀 Próximos Passos
+
+A arquitetura atual foi intencionalmente desenhada respeitando a premissa de manter o controle humano (*Human-in-the-Loop*). A IA realiza o trabalho pesado de triagem e cálculo, mas a validação e o envio da proposta permanecem sob a governança da equipe comercial. 
+
+À medida que a confiabilidade do sistema for homologada e a cultura da empresa ganhar maturidade na adoção da tecnologia, o projeto possui um roteiro claro de evolução:
+
+*   **Automação End-to-End (Envio Direto):** Transição do modelo de "Rascunho" para o envio automático das respostas via Gmail API, reduzindo o SLA de atendimento do cliente para questão de segundos.
+*   **Dashboards de Business Intelligence:** Conectar a base de dados gerada no Google Sheets diretamente a ferramentas como o Power BI. Isso permitirá a criação de painéis gerenciais para analisar indicadores-chave, como volume de solicitações, tempo de resposta e mapa de calor dos chamados de manutenção.
+*   **Expansão Multicanal (WhatsApp):** Replicar o "cérebro" do Agente de IA para operar não apenas por e-mail, mas também respondendo a solicitações de orçamento via WhatsApp, orquestrando fluxos com a API oficial e *webhooks* no n8n.
+*   **Integração Nativa com CRM:** Evoluir o armazenamento de dados para a criação automática de *cards* e *deals* em plataformas de CRM (como HubSpot, Pipefy ou RD Station), automatizando também os *follow-ups* de vendas após o envio da proposta.
