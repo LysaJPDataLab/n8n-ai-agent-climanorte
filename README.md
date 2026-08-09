@@ -95,6 +95,8 @@ graph TD
     class F action;
 ```
 
+---
+
 # 🛠️ Tecnologias e Ferramentas
 
 | Categoria | Ferramenta / Serviço | Papel na Arquitetura |
@@ -126,6 +128,8 @@ Para entender a lógica de cálculo e adaptar os preços e localizações para a
 2. Abra o seu n8n, vá em *Workflows* > *Import from File* e selecione o arquivo baixado.
 3. Cadastre e vincule as suas próprias credenciais do Google e Gemini nos respectivos nós.
 4. No nó "Append row in sheet", substitua a URL temporária pelo link da sua própria planilha do Google Drive.
+
+---
 
 # 🎯 Aplicação e Benefícios
 
