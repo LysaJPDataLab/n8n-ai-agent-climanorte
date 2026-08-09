@@ -135,7 +135,7 @@ Para entender a lógica de cálculo e adaptar os preços e localizações para a
 
 Este projeto demonstra, na prática, como ferramentas de automação *Low-Code* integradas a LLMs modernos podem resolver dores reais de gestão de facilities, operações e manutenção.
 
-A padronização das respostas, a eliminação do trabalho braçal de "copiar e colar" dados e a garantia de que as regras comerciais sejam seguidas com 100% de precisão geram valor imediato para qualquer setor de orçamentação e planejamento.
+A padronização das respostas, a eliminação do trabalho braçal de "copiar e colar" dados e a garantia de que as regras comerciais sejam seguidas com precisão geram valor imediato para qualquer setor de orçamentação e planejamento.
 
 ### ⏱️ Análise de Ganho de Tempo (Manual vs. Automatizado)
 
