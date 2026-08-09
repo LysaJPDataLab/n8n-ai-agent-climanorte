@@ -1,6 +1,6 @@
 # 🤖 AI Agent para Triagem de Orçamentos (ClimaNorte)
 
-![Status](https://img.shields.io/badge/Status-Demonstração-brightgreen)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 ![n8n](https://img.shields.io/badge/Workflow-n8n-FF6C37)
 ![LLM](https://img.shields.io/badge/LLM-Google_Gemini-4285F4)
 ![Banco de Dados](https://img.shields.io/badge/Database-Google_Sheets-34A853)
