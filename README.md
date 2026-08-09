@@ -60,19 +60,38 @@ Se a solicitação vier incompleta:
 
 ---
 
-# 🔄 Arquitetura e Workflows
+# 🔄 Arquitetura de Software (System Architecture)
 
-O projeto foi construído em um fluxo unificado executado no n8n, dividido nas seguintes etapas lógicas:
+A solução foi desenhada sob um padrão arquitetural orientado a eventos (*Event-Driven Architecture*), utilizando o n8n como orquestrador (*middleware*) entre os serviços. O processamento segue um pipeline lógico de extração, transformação e carga, onde dados desestruturados são convertidos em esquemas rígidos (JSON) para persistência e tomada de ação.
 
-## 1️⃣ Gatilho e Extração (Gmail + AI Agent)
-Monitora a caixa de entrada por assuntos específicos. Envia o texto do e-mail e o remetente para o Gemini, que utiliza o `Structured Output Parser` para devolver um JSON validado seguindo as regras do `system_prompt`.
+Abaixo está o diagrama do fluxo de dados (*Data Flow Diagram*) da aplicação:
 
-## 2️⃣ Tomada de Decisão (Nó IF)
-Avalia a chave booleana `InformacoesCompletas` (gerada pela IA). Funciona como o roteador principal do fluxo, separando clientes prontos para orçamento daqueles que precisam de qualificação.
+```mermaid
+graph TD
+    %% Definição de Nós
+    A[📧 Gmail API<br>Polling Trigger] -->|Payload: Email JSON| B(🧠 AI Agent - Gemini<br>Semantic Extraction & Logic)
+    
+    B -->|Output: Structured JSON| C{🔀 Control Flow<br>Boolean Routing}
+    
+    %% Caminho True (Paralelo)
+    C -->|True: Complete Data| D[(🗄️ Google Sheets API<br>Data Persistence)]
+    C -->|True: Complete Data| E[📤 Gmail API<br>Draft Generation - Proposal]
+    
+    %% Caminho False
+    C -->|False: Missing Data| F[📤 Gmail API<br>Draft Generation - Info Request]
 
-## 3️⃣ Execução Simultânea (Google Sheets + Gmail)
-Opera sem dependência de interação humana, convertendo os dados estruturados em uma nova linha no banco de dados e preparando a comunicação final na caixa de rascunhos.
+    %% Estilização (Classes)
+    classDef trigger fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    classDef agent fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
+    classDef decision fill:#fff3e0,stroke:#ef6c00,stroke-width:2px;
+    classDef data fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    classDef action fill:#ffebee,stroke:#c62828,stroke-width:2px;
 
+    class A trigger;
+    class B agent;
+    class C decision;
+    class D,E data;
+    class F action;
 ---
 
 # 🛠️ Tecnologias e Ferramentas
