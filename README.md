@@ -46,14 +46,14 @@ O Agente lê o e-mail de solicitação de orçamento em linguagem natural e tent
 * Tipo de serviço (Preventiva, Corretiva, Instalação);
 * Data proposta para execução.
 
-## Cálculo e Proposta (Caminho True)
+## Cálculo e Proposta
 Se a IA validar que todos os dados estão presentes:
 * Calcula o **Dias para Atendimento** e define o nível de **Urgência** (Baixa, Média, Alta).
 * Executa o cálculo de preço base, acrescido de taxas de deslocamento (por quilometragem no Litoral Norte) e fatores de acréscimo (ex: clientes do tipo "Resort").
 * Salva a linha de dados limpos na planilha de controle.
 * Gera um rascunho com o orçamento finalizado.
 
-## Tratamento de Exceções (Caminho False)
+## Tratamento de Exceções
 Se a solicitação vier incompleta:
 * O sistema identifica exatamente qual dado faltou (ex: "O cliente não enviou o CEP").
 * Pula a etapa de salvar no banco de dados.
