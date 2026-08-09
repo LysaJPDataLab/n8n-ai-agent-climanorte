@@ -60,7 +60,7 @@ Se a solicitação vier incompleta:
 
 ---
 
-# 🔄 Arquitetura de Software (System Architecture)
+# 🔄 Arquitetura
 
 A solução foi desenhada sob um padrão arquitetural orientado a eventos (*Event-Driven Architecture*), utilizando o n8n como orquestrador (*middleware*) entre os serviços. O processamento segue um pipeline lógico de extração, transformação e carga, onde dados desestruturados são convertidos em esquemas rígidos (JSON) para persistência e tomada de ação.
 
