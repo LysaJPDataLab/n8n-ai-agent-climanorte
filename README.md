@@ -100,7 +100,7 @@ graph TD
 | Categoria | Ferramenta / Serviço | Papel na Arquitetura |
 | :--- | :--- | :--- |
 | **Orquestração** | n8n | Integração dos nós, orquestração de gatilhos e lógica de roteamento (IF) |
-| **Inteligência Artificial** | Google Gemini (PaLM) | Agente de análise de texto, cálculo de regras de negócio e formatação JSON |
+| **Inteligência Artificial** | Google Gemini | Agente de análise de texto, cálculo de regras de negócio e formatação JSON |
 | **Banco de Dados** | Google Sheets | Armazenamento estruturado e limpo dos orçamentos para futura integração com B.I. |
 | **Interface de Comunicação** | Gmail | Ponto de entrada (Gatilho) e saída (Criação de Rascunhos) da automação |
 
