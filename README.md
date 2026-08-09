@@ -115,7 +115,7 @@ Se você deseja replicar este assistente no seu próprio ambiente n8n, siga os p
 ### 1. Pré-requisitos
 * Uma instância do [n8n](https://n8n.io/) rodando.
 * Credenciais OAuth2 do Google Cloud Console para o **Gmail API** e **Google Sheets API**.
-* Uma chave de API (API Key) do **Google Gemini**.
+* Uma chave de API (API Key) do **[Google Gemini (Google AI Studio)](https://aistudio.google.com/)**.
 
 ### 2. Configuração do Banco de Dados
 Na pasta `/database` deste repositório, você encontrará o arquivo `.xlsx` de template. Importe este arquivo no seu Google Drive para criar a planilha exata com os cabeçalhos esperados pelo fluxo.
