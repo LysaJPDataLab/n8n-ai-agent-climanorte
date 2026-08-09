@@ -49,8 +49,8 @@ O Agente lê o e-mail de solicitação de orçamento em linguagem natural e tent
 ## Cálculo e Proposta
 Se a IA validar que todos os dados estão presentes:
 * Calcula o **Dias para Atendimento** e define o nível de **Urgência** (Baixa, Média, Alta).
-* Executa o cálculo de preço base, acrescido de taxas de deslocamento (por quilometragem no Litoral Norte) e fatores de acréscimo (ex: clientes do tipo "Resort").
-* Salva a linha de dados limpos na planilha de controle.
+* Executa o cálculo de preço base, acrescido de taxas de deslocamento (por quilometragem) e fatores de acréscimo (ex: clientes do tipo "Resort").
+* Salva os dados limpos em uma nova linha na planilha de controle.
 * Gera um rascunho com o orçamento finalizado.
 
 ## Tratamento de Exceções
