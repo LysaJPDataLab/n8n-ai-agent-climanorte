@@ -127,8 +127,6 @@ Para entender a lógica de cálculo e adaptar os preços e localizações para a
 3. Cadastre e vincule as suas próprias credenciais do Google e Gemini nos respectivos nós.
 4. No nó "Append row in sheet", substitua a URL temporária pelo link da sua própria planilha do Google Drive.
 
----
-
 # 🎯 Aplicação e Benefícios
 
 Este projeto demonstra, na prática, como ferramentas de automação *Low-Code* integradas a LLMs modernos podem resolver dores reais de gestão de facilities, operações e manutenção.
