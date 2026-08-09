@@ -142,7 +142,7 @@ Ao comparar a execução de ponta a ponta de um fluxo tradicional (manual) com o
 | Etapa do Processo | Fluxo Manual Tradicional | Fluxo Automatizado (n8n + AI) | Ganho / Redução |
 | :--- | :--- | :--- | :--- |
 | **Leitura e Triagem** | ~3 a 5 min (Abrir e-mail, verificar dados) | Instantâneo (Gatilho em tempo real) | **100% automatizado** |
-| **Cálculo e Regras de Negócio** | ~5 min (Consultar tabela de km, somar taxas) | Instantâneo (Processado pela LLM) | **Redução de erros de cálculo** |
+| **Cálculo e Regras de Negócio** | ~5 min (Consultar distância, somar taxas) | Instantâneo (Processado pela LLM) | **Redução de erros de cálculo** |
 | **Registro em Planilha** | ~3 min (Digitar cliente, CNPJ, valores) | Instantâneo (Append via API) | **Redução de erro humano ao digitar informações** |
 | **Redação da Proposta** | ~7 min (Escrever e-mail formal / cobrar dados) | Instantâneo (Geração do rascunho) | **Padronização** |
 | **Tempo Total por Solicitação** | **Aprox. 15 a 20 minutos** por e-mail | **Menos de 10 segundos** de processamento | **Redução de ~95% no tempo operacional** |
