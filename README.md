@@ -32,7 +32,7 @@ O sistema utiliza uma arquitetura linear que combina:
 * 🗄️ **Banco de dados em Nuvem (Google Sheets):** Alimentação de um pipeline de vendas e histórico de solicitações em tempo real.
 * 📧 **Orquestração de E-mail (Gmail):** Geração dinâmica de rascunhos anexados à "thread" (conversa) original do cliente.
 
-Foi mantida a premissa de que a resposta final para o cliente ainda passa pela revisão da equipe comercial para decidir se o rascunho da resposta do e-mail criado pela IA deve ser enviado ou não (Human-in-the-Loop), sendo este um requisito de projeto do cliente, que é um pouco mais conservador para aplicação de IA ao negócio.
+Foi mantida a premissa de que a resposta final para o cliente ainda passa pela revisão da equipe comercial para decidir se o rascunho da resposta do e-mail criado pela IA deve ser enviado ou não (*Human-in-the-Loop*), sendo este um requisito de projeto do cliente, que é um pouco mais conservador para aplicação de IA ao negócio.
 
 ---
 
@@ -63,7 +63,7 @@ Se a solicitação vier incompleta:
 
 # 🔄 Arquitetura
 
-A solução foi desenhada sob um padrão arquitetural orientado a eventos (*Event-Driven Architecture*), utilizando o n8n como orquestrador (*middleware*) entre os serviços. O processamento segue um pipeline lógico de extração, transformação e carga, onde dados desestruturados são convertidos em esquemas rígidos (JSON) para persistência e tomada de ação.
+A solução foi desenhada sob um padrão arquitetural orientado a eventos (*Event-Driven Architecture*), utilizando o n8n como orquestrador entre os serviços. O processamento segue um pipeline lógico de extração, transformação e carga, onde dados desestruturados são convertidos em esquemas rígidos (JSON) para persistência e tomada de ação.
 
 Abaixo está o diagrama do fluxo de dados (*Data Flow Diagram*) da aplicação:
 
