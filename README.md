@@ -14,7 +14,6 @@ A solução permite que a equipe comercial ganhe escalabilidade, substituindo a 
 
 <table>
   <tr>
-    <td><img src="docs/fluxograma_projeto_final.png" alt="Fluxograma da Arquitetura do Projeto" width="100%"></td>
     <td><img src="docs/n8n_worflow_IF-True_OK.PNG" alt="Demonstração do Fluxo no n8n" width="100%"></td>
   </tr>
 </table>
