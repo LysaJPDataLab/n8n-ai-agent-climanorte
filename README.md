@@ -39,7 +39,7 @@ Foi mantida a premissa de que a resposta final para o cliente ainda passa pela r
 # 🚀 Funcionalidades
 
 ## Triagem Inteligente de Dados
-O Agente lê o e-mail em linguagem natural e tenta extrair 5 dados obrigatórios:
+O Agente lê o e-mail de solicitação de orçamento em linguagem natural e tenta extrair 5 dados obrigatórios:
 * Localização;
 * CEP;
 * Quantidade de máquinas;
