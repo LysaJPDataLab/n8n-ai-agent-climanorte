@@ -92,7 +92,7 @@ graph TD
     class C decision;
     class D,E data;
     class F action;
----
+```
 
 # 🛠️ Tecnologias e Ferramentas
 
