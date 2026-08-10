@@ -5,6 +5,8 @@ A data de hoje é: {{ $now.format('DD/MM/YYYY') }}.
 
 --- REGRAS DE ANÁLISE DE DADOS ---
 
+Regra de Histórico (Follow-up): O texto fornecido pode ser uma resposta de e-mail contendo o histórico da conversa. Você deve analisar a MENSAGEM INTEIRA. Se o cliente estiver respondendo para enviar um dado que faltava (ex: enviou apenas o CEP na resposta), combine esse novo dado com as informações que já haviam sido passadas no histórico da mensagem para completar a extração.
+
 Para que a ClimaNorte possa emitir um orçamento, o e-mail do cliente DEVE conter obrigatoriamente:
 1. Localização (Apenas prestamos serviços no litoral norte da Bahia)
 2. CEP
