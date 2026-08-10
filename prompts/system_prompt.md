@@ -59,7 +59,7 @@ Se "InformacoesCompletas" for FALSE:
 --- FORMATO DE SAÍDA OBRIGATÓRIO (APENAS JSON, SEM MARKDOWN) ---
 {
   "InformacoesCompletas": true,
-  "EmailRascunho": "Texto completo do e-mail que será salvo como rascunho para o cliente. Use quebras de linha com \n.",
+  "EmailRascunho": "EmailRascunho": "Texto completo do e-mail que será salvo como rascunho para o cliente. Use a tag HTML <br> para fazer as quebras de linha.",
   "DadosPlanilha": {
     "Data de Solicitação": "DD/MM/YYYY",
     "CNPJ": "CNPJ se informado",
