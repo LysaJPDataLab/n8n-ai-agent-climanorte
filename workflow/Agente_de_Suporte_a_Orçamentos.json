@@ -49,7 +49,7 @@
         },
         "simple": false,
         "filters": {
-          "q": "subject:(\"Solicitação de Orçamento\")",
+          "q": "subject:(orçamento OR orcamento OR proposta)",
           "readStatus": "unread"
         },
         "options": {}
