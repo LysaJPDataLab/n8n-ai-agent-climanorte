@@ -26,12 +26,6 @@ No setor de manutenção predial e industrial, equipes comerciais frequentemente
 
 Este projeto foi desenvolvido para transformar o recebimento de e-mails em um funil inteligente e estruturado, capaz de extrair dados de textos não padronizados, validar regras de negócio complexas e estruturar os resultados de forma acionável para a equipe humana.
 
-O sistema utiliza uma arquitetura linear que combina:
-* 🧠 **Inteligência Artificial Generativa:** LLM (Gemini) atuando como orçamentista para extração de variáveis e cálculo lógico (taxas de deslocamento e urgência).
-* 🗂️ **Parseamento Estruturado:** Força o modelo de linguagem a responder estritamente em um schema JSON predefinido.
-* 🗄️ **Banco de dados em Nuvem (Google Sheets):** Alimentação de um pipeline de vendas e histórico de solicitações em tempo real.
-* 📧 **Orquestração de E-mail (Gmail):** Geração dinâmica de rascunhos anexados à "thread" (conversa) original do cliente.
-
 Foi mantida a premissa de que a resposta final para o cliente ainda passa pela revisão da equipe comercial para decidir se o rascunho da resposta do e-mail criado pela IA deve ser enviado ou não (*Human-in-the-Loop*), sendo este um requisito de projeto do cliente, que é um pouco mais conservador para aplicação de IA ao negócio.
 
 ---
