@@ -124,7 +124,7 @@ Na pasta `/database` deste repositório, você encontrará o arquivo `.xlsx` de 
 Para entender a lógica de cálculo e adaptar os preços e localizações para a sua realidade de negócios, consulte o arquivo `system_prompt.md` localizado na pasta `/prompts`.
 
 ### 4. Importação do Workflow
-1. Acesse a pasta `/workflow` e baixe o arquivo `Agente_Suporte_Orcamentos.json`.
+1. Acesse a pasta `/workflow` e baixe o arquivo `Agente_de_Suporte_a_Orçamentos_por_Email.json`.
 2. Abra o seu n8n, vá em *Workflows* > *Import from File* e selecione o arquivo baixado.
 3. Cadastre e vincule as suas próprias credenciais do Google e Gemini nos respectivos nós.
 4. No nó "Append row in sheet", substitua a URL temporária pelo link da sua própria planilha do Google Drive.
