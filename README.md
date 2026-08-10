@@ -63,14 +63,19 @@ Se a solicitação vier incompleta:
 
 # 🔄 Arquitetura
 
-A solução foi desenhada sob um padrão arquitetural orientado a eventos (*Event-Driven Architecture*), utilizando o n8n como orquestrador entre os serviços. O processamento segue um pipeline lógico de extração, transformação e carga, onde dados desestruturados são convertidos em esquemas rígidos (JSON) para persistência e tomada de ação.
+A solução foi desenhada sob um padrão arquitetural orientado a eventos (*Event-Driven Architecture*), utilizando o n8n como orquestrador (*middleware*) entre os serviços. O processamento segue um pipeline lógico de extração, transformação e carga, onde dados desestruturados são convertidos em esquemas rígidos (JSON) para persistência e tomada de ação. 
 
-Abaixo está o diagrama do fluxo de dados (*Data Flow Diagram*) da aplicação:
+Para lidar com conversas contínuas (ida e volta de e-mails em processos de qualificação), a arquitetura incorpora um gerenciamento de estado contextual dinâmico, garantindo que a IA se lembre de interações anteriores sem misturar dados de clientes diferentes.
+
+Abaixo está o diagrama do fluxo de dados (*Data Flow Diagram*) da aplicação atualizada:
 
 ```mermaid
 graph TD
     %% Definição de Nós
     A[📧 Gmail API<br>Polling Trigger] -->|Payload: Email JSON| B(🧠 AI Agent - Gemini<br>Semantic Extraction & Logic)
+    
+    %% Nó de Memória
+    M[(💾 Window Buffer Memory<br>Session Key: ThreadId)] -.->|Context Injection| B
     
     B -->|Output: Structured JSON| C{🔀 Control Flow<br>Boolean Routing}
     
@@ -84,12 +89,14 @@ graph TD
     %% Estilização (Classes)
     classDef trigger fill:#f9f9f9,stroke:#333,stroke-width:1px;
     classDef agent fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
+    classDef memory fill:#e1bee7,stroke:#8e24aa,stroke-width:2px;
     classDef decision fill:#fff3e0,stroke:#ef6c00,stroke-width:2px;
     classDef data fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
     classDef action fill:#ffebee,stroke:#c62828,stroke-width:2px;
 
     class A trigger;
     class B agent;
+    class M memory;
     class C decision;
     class D,E data;
     class F action;
