@@ -1,4 +1,4 @@
-# 🤖 AI Agent para Triagem de Orçamentos (ClimaNorte Refrigeração)
+# 🤖 AI Agent for Budget Screening (ClimaNorte Refrigeration)
 
 ![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 ![n8n](https://img.shields.io/badge/Workflow-n8n-FF6C37)
